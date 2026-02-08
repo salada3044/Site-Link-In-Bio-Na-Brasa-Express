@@ -118,7 +118,11 @@
         WhatsApp
       </a>
 
-      <a class="link instagram animate" href="#" onclick="openInstagram(event)">
+      <a
+        class="link instagram animate"
+        href="https://www.instagram.com/na_brasa_express?igsh=MXI1eGVkdjFodGxrbA=="
+        target="_blank"
+      >
         <img src="instagram.png" alt="Instagram" />
         Instagram
       </a>
@@ -128,26 +132,12 @@
 
     <script>
       const elements = document.querySelectorAll(".animate");
+
       elements.forEach((el, index) => {
         setTimeout(() => {
           el.classList.add("show");
         }, index * 200);
       });
-
-      function openInstagram(e) {
-        e.preventDefault();
-
-        const username = "na_brasa_express";
-        const appLink = "instagram://user?username=" + username;
-        const webLink = "https://www.instagram.com/" + username + "/";
-
-        window.location.href = appLink;
-
-        setTimeout(() => {
-          window.location.href = webLink;
-        }, 600);
-      }
     </script>
   </body>
 </html>
-
